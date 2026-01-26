@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e7f5eb;
+            margin: 40px;
+        }
+
+        .container {
+            
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+            background-color: #f7ecec;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+
+           
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 20px;
+        }
+
+
+
+
+
+        .card1 {
+            background-color: #f9fbfa;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            border-left: 5px solid #65ee69;
+
+
+        }
+
+        .card2 {
+            background-color: #fafafa;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            border-left: 5px solid #4CAF50;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .gpa {
+            text-align: left;
+        }
+
+        .card3 {
+            background-color: #fafafa;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            border-left: 5px solid #16961a;
+
+
+            grid-column: 1 / -1;
+
+        }
+
+
+
+        h1 {
+            color: #17880d;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .blacklink {
+            color: black;
+            text-decoration: none;
+            text-align: left;
+            grid-column: 1 / -1;
+            /* 1  เส้นเริ่มต้นของคอลัมน์ (ซ้ายสุด)   -1  เส้นสุดท้ายของ grid (ขวาสุด) */
+
+        }
+
+        .blacklink:hover {
+            text-decoration: underline;
+            color: #1031f0;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 10px;
+            border-collapse: collapse;
+            font-size: 18px;
+        }
+
+        th,
+        td {
+            border: 1px solid #999;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+
+        .profile-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 10px;
+            display: block;
+            margin: 10px auto;
+            display: block;
+            margin: 10px auto 20px;
+        }
+
+        footer{
+    background-color: rgb(0, 251, 255);
+    text-align: center;
+    padding: 10px;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <h1>รายงานผลการเรียน</h1>
+    <div class="container">
+
+        <div class="card1">
+            
+
+            <img src="images/profile.jpg" alt="รูปถ่ายตนเอง" class="profile-img">
+
+            <h2>ข้อมูลนักศึกษา</h2>
+            <ul>
+                <li>รหัสนักศึกษา: 674259022</li>
+                <li>ชื่อ-นามสกุล: วุฒิชัย จันทร์มีชัย</li>
+                <li>หมู่เรียน: 67/50</li>
+                <li>คณะ: วิทยาศาสตร์และเทคโนโลยี</li>
+                <li>สาขา: วิศวกรรมซอฟต์แวร์</li>
+            </ul>
+        </div>
+
+        <div class="card2">
+            <h2>ผลการเรียนและเกรดเฉลี่ย</h2>
+            <table>
+                <tr>
+                    <th>ปีการศึกษา</th>
+                    <th>เทอม</th>
+                    <th>GPA</th>
+                </tr>
+                <tr>
+                    <td>ปี 1</td>
+                    <td>เทอม 1</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>ปี 1</td>
+                    <td>เทอม 2</td>
+                    <td>3.34</td>
+                </tr>
+                <tr>
+                    <td>ปี 2</td>
+                    <td>เทอม 1</td>
+                    <td>3.44</td>
+                </tr>
+            </table>
+            <p class="gpa"><strong>GPA สะสม: 3.70</strong></p>
+        </div>
+
+        <div class="card3">
+            <h2>ที่อยู่ / สถานศึกษา</h2>
+            <p>
+                มหาวิทยาลัยราชภัฏนครปฐม<br>
+                คณะวิทยาศาสตร์และเทคโนโลยี<br>
+                สาขาวิศวกรรมซอฟต์แวร์<br>
+            </p>
+            <p><strong>ช่องทางการติดต่อ</strong></p>
+            <ul>
+                <li>อีเมล: 674259022@webmail.npru.ac.th</li>
+                <li>โทรศัพท์: 082-540-7013</li>
+                <li>Instagram: ipup_48</li>
+            </ul>
+        </div>
+    
+            <a class="blacklink" href="index.html">← Back to HTML Tutorial</a>
+       
+    </div>
+
+<footer>
+    &copy;2025 Wuttichai Janmeechai
+</footer>
+
+</body>
+
+</html>

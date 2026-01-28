@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #5fb8ec;
+
+
+        }
+
+        .container {
+
+            max-width: 900px;
+            margin: auto;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+
+            display: grid;
+            /*grid-template-columns: 1fr 1.5fr;*/
+            gap: 20px;
+        }
+
+
+
+
+
+        .card1 {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            align-items: center;
+
+
+        }
+
+        .card2 {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .gpa {
+            text-align: left;
+            background-color: #f02424;
+            font-size: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 5px 5px 10px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+
+
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            background-color: #156f09;
+            padding: 15px;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .blacklink {
+            color: black;
+            text-decoration: none;
+            text-align: left;
+            grid-column: 1 / -1;
+            /* 1  เส้นเริ่มต้นของคอลัมน์ (ซ้ายสุด)   -1  เส้นสุดท้ายของ grid (ขวาสุด) */
+
+        }
+
+        .blacklink:hover {
+            text-decoration: underline;
+            color: #1031f0;
+        }
+
+
+        ul {
+            list-style: none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .ul-info {
+            background-color: #ed5818;
+            font-size: 16px;
+            color: #ffffff;
+            transition: 0.3s ease;
+            height: auto;
+            border-radius: 20px;
+
+        }
+
+        .ul-info:hover {
+            transform: scale(1.05);
+
+        }
+
+
+        .profile-img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 10px;
+            display: block;
+            margin: 10px auto;
+            display: block;
+            margin: 10px auto 20px;
+        }
+
+        .btn {
+            background-color: #7abbf3;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .btn-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 15px;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            border-radius: 15px;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-grid li {
+            margin: 15px 0;
+            transition: transform 0.3s ease;
+        }
+
+        .btn-grid li :hover {
+            transform: translateY(-10px);
+        }
+
+        .grade {
+            background-color: #7abbf3;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 24px;
+        }
+
+        .grade-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 7px;
+            border-radius: 10px;
+        }
+
+
+
+
+
+
+        footer {
+            background-color:#156f09 ;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>รายงานผลเกรด</h1>
+
+
+    <div class="btn-grid container">
+        <a href=""><button class="btn">👍ข้อมูลนักศึกษา</button></a>
+        <a href=""><button class="btn">👍ผลการเรียน</button></a>
+        <a href=""><button class="btn">👍ติดต่อ</button></a>
+    </div>
+
+
+
+    <div class="card1 container">
+        <ul class="ul-info">
+            <h2> <b>👍Mr.Wuttichai Janmeechai</b></h2>
+            <hr>
+            <li><b>👍รหัสนักศึกษา</b>:674259022</li>
+            <li><b>👍ชื่อ-นามสกุล</b>: วุฒิชัย จันทร์มีชัย</li>
+            <li><b>👍หมู่เรียน</b>: 67/50</li>
+            <li><b>👍อาจารย์ที่ปรึกษา</b>: ดร.อุษณีย์ ภักดีตระกูลวงศ์</li>
+            <li><b>👍GitHub</b>:https://github.com/Ipup48/HTML-Tutorial.git</li>
+        </ul>
+        <img src="images/profile.jpg" alt="รูปถ่ายตนเอง" class="profile-img">
+    </div>
+
+
+    <div class="card2 container">
+        <div class="grade-grid">
+            <button class="grade">👍ปี 1 เทอม 1: <span style="color: red;">3.52</span></></button>
+            <button class="grade">👍ปี 1 เทอม 2: <span style="color: red;">3.70</span></button>
+            <button class="grade">👍ปี 2 เทอม 1: <span style="color: red;">3.32</span></button>
+        </div>
+    </div>
+
+    <div class="gpa container">
+        <p><strong>👍เกรดเฉลี่ยสะสม: 3.60</strong></p>
+    </div>
+
+
+
+    <footer>
+        &copy;2024 Webmaster by Wuttichai Janmeechai. ID 674259022.
+        <br>
+        👍Nakhon Pathom Rajabhat University
+    </footer>
+
+</body>
+
+</html>
+
+
+
+
+
+</body>
+
+</html>

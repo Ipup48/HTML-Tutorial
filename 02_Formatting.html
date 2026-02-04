@@ -1,81 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatting Workshop</title>
     <style>
-        body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin:0;
-        padding:0;
-        line-height:1.6;
-       background-color: beige;}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: beige;
+        }
 
-       .container {
+        .container {
             /* background-color: blue; */
             width: 60%;
             margin: 0 auto;
-        } 
+        }
 
         .card {
             background-color: rgb(245, 226, 226);
             padding: 20px;
-            margin-bottom:20px;
+            margin-bottom: 20px;
             border-radius: 20px;
             border-top: 4px solid rgb(225, 94, 94);
         }
-        .card.module-1 {border-top-color:rgb(0, 82, 246);}
-        .card.module-2 {border-top-color:chartreuse}
+
+        .card.module-1 {
+            border-top-color: rgb(0, 82, 246);
+        }
+
+        .card.module-2 {
+            border-top-color: chartreuse
+        }
 
 
         h1 {
-            text-align:center;
-            color:black;
-            }
-
-        
+            text-align: center;
+            color: black;
+        }
 
 
 
-            a{
+
+
+        a {
             text-decoration: none;
             color: rgb(9, 2, 2);
-            background-color:rgb(227, 172, 188) ;
+            background-color: rgb(227, 172, 188);
             padding: 2px 8px;
             border-radius: 5px;
         }
-        a:hover{
+
+        a:hover {
             text-decoration: none;
             color: blue;
         }
-        
+
         footer {
             margin-bottom: 20px;
         }
 
         .text-color {
-                color: deeppink
-            }
+            color: deeppink
+        }
 
         .note {
             border-left: 3px solid rgb(203, 193, 193);
             color: grey;
             font-size: 14px;
         }
+
         .note::before {
             content: "💡";
         }
-
-
-
-
     </style>
 </head>
+
 <body>
-  <div class="container">
+    <div class="container">
 
         <h1>Workshop: HTML Text Formatting</h1>
-        <p style="text-align: center; color:rgb(34, 34, 155)" >ฝึกใช้แท็กรูปแบบข้อความ (Formatting Tags) เพื่อสร้างเนื้อหาที่อ่านง่ายและเป็นระเบียบ</p>
+        <p style="text-align: center; color:rgb(34, 34, 155)">ฝึกใช้แท็กรูปแบบข้อความ (Formatting Tags)
+            เพื่อสร้างเนื้อหาที่อ่านง่ายและเป็นระเบียบ</p>
 
         <!-- Card 1: Explanation -->
         <section class="card">
@@ -85,7 +94,8 @@
 
             <ul>
                 <li>&lt;b&gt; – <b class="text-color">ตัวหนา (เน้นเฉย ๆ)</b></li>
-                <li>&lt;strong&gt; – <strong class="text-color">ตัวหนาแบบ “สำคัญ” เชิงความหมาย (semantic importance)</strong></li>
+                <li>&lt;strong&gt; – <strong class="text-color">ตัวหนาแบบ “สำคัญ” เชิงความหมาย (semantic
+                        importance)</strong></li>
                 <li>&lt;i&gt; – <i class="text-color">ตัวเอียง (ใช้กับศัพท์เฉพาะหรือตัวเน้น)</i></li>
                 <li>&lt;em&gt; – <em class="text-color">ตัวเอียงแบบเน้นน้ำเสียง</em></li>
                 <li>&lt;u&gt; – <u class="text-color">ขีดเส้นใต้</u></li>
@@ -96,7 +106,7 @@
                 <li>&lt;del&gt; – <del class="text-color">ข้อความขีดฆ่า</del></li>
                 <li>&lt;s&gt; – <s class="text-color">ข้อความขีดฆ่า</s></li>
                 <li>&lt;sub&gt; – ตัวห้อย เช่น H<sub class="text-color">2</sub>O</li>
-                <li>&lt;sup&gt; – ตัวยก เช่น x<sup class="text-color">2</sup></li>                
+                <li>&lt;sup&gt; – ตัวยก เช่น x<sup class="text-color">2</sup></li>
             </ul>
             <div class="box">
                 <p>แท็กที่ไม่รองรับใน HTML5</p>
@@ -111,7 +121,7 @@
                 นักศึกษาต้องใช้แท็ก formatting อย่างน้อย 5 ชนิดในงานนี้
             </div>
         </section>
-       
+
         <!-- Card 2: Task -->
         <section class="card module-1">
             <h2>2. ภารกิจของสำหรับนักศึกษาต้องทำ</h2>
@@ -137,4 +147,5 @@
 
     </div>
 </body>
+
 </html>

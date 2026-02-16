@@ -706,3 +706,20 @@ transform 0.2s ease; */
   text-decoration:underline;
 }
 
+
+.back-link {
+  display: block;
+  margin-top: 15px;
+  text-decoration:none;
+  color: #ffffff;
+  font-weight:bold;
+
+  background-color: #58c2ec;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+ }
+  .back-link:hover {
+    text-decoration: none;
+    color: rgb(114, 231, 18);
+  }

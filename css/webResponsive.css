@@ -356,6 +356,25 @@ footer {
 }
 
 
+.back-link {
+  display: block;
+  margin-top: 15px;
+  text-decoration:none;
+  color: #ffffff;
+  font-weight:bold;
+  margin: 20px auto;
+
+  background-color: #17e66a;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+ }
+  .back-link:hover {
+    text-decoration: none;
+    color: red;
+  }
+
+
 /*=== Form ===*/
 .recomentation-form {
     max-width: 800px;

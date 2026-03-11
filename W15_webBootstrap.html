@@ -14,16 +14,18 @@
         body {
             background-color: rgb(229, 230, 231);
         }
-        
-        .hero-section  {
+
+        .hero-section {
             background: linear-gradient(rgb(45, 64, 230), rgb(111, 45, 216));
             color: white;
             padding: 80px 0;
         }
-        .hero-section h1  {
+
+        .hero-section h1 {
             font-weight: 600;
         }
-              /* Features */
+
+        /* Features */
         .section-title {
             font-weight: 700;
             margin-bottom: 1rem;
@@ -38,7 +40,7 @@
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
         }
 
-                /* Modern Footer */
+        /* Modern Footer */
         .modern-footer {
             background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
             position: relative;
@@ -130,6 +132,24 @@
             font-size: 0.95rem;
         }
 
+        .back-link {
+            display: block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            margin: 20px auto;
+
+            background-color: #3a27df;
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .back-link:hover {
+            text-decoration: none;
+            color: rgb(240, 73, 73);
+        }
     </style>
 </head>
 
@@ -178,13 +198,13 @@
 
         <!-- ภาพสไลด์ -->
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="300">
+            <div class="carousel-item active" data-bs-interval="2000">
                 <img src="https://picsum.photos/id/1015/1600/600" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item" data-bs-interval="300">
+            <div class="carousel-item" data-bs-interval="2000">
                 <img src="https://picsum.photos/id/1016/1600/600" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item" data-bs-interval="300">
+            <div class="carousel-item" data-bs-interval="2000">
                 <img src="https://picsum.photos/id/1018/1600/600" class="d-block w-100" alt="...">
             </div>
         </div>
@@ -217,7 +237,8 @@
                     <div class="card shadow-lg border-0">
                         <div class="card-body p-4">
                             <h5 class="card-title text-dark">สรุปภาพรวมระบบ</h5>
-                            <p class="card-text text-danger">ใช้ Bootstrap Grid ในการจัดวางหน้า ใช้ Utility Classes ช่วยกำหนด
+                            <p class="card-text text-danger">ใช้ Bootstrap Grid ในการจัดวางหน้า ใช้ Utility Classes
+                                ช่วยกำหนด
                                 spacing สี และ alignment</p>
 
                             <ul class="list-group list-group-flush">
@@ -240,55 +261,55 @@
 
 
 
-<!--Section Features-->
-  <section id="features" class="py-5">
-    <div class="container">
+    <!--Section Features-->
+    <section id="features" class="py-5">
+        <div class="container">
 
-      <h2 class="section-title text-center">คุณสมบัติเด่น</h2>
-      <p class="text-center text-muted mb-5">
-        ส่วนนี้ใช้ Bootstrap Grid + Card
-      </p>
+            <h2 class="section-title text-center">คุณสมบัติเด่น</h2>
+            <p class="text-center text-muted mb-5">
+                ส่วนนี้ใช้ Bootstrap Grid + Card
+            </p>
 
-      <!-- <div class=""> -->
-      <div class="row">
-        <div class="col-md-4">
+            <!-- <div class=""> -->
+            <div class="row">
+                <div class="col-md-4">
 
-          <!-- <div class="card"> -->
-          <div class="card feature-card h-100 border-0 shadow-lg">
-            <div class="card-body">
-              <h5 class="card-title">ออกแบบสวยงาม</h5>
-              <p class="card-text">
-                ใช้คลาสมาตรฐานของ Bootstrap ทำให้หน้าเว็บดูเป็นระเบียบและทันสมัย
-              </p>
-              <a href="#" class="btn btn-primary">อ่านเพิ่มเติม</a>
+                    <!-- <div class="card"> -->
+                    <div class="card feature-card h-100 border-0 shadow-lg">
+                        <div class="card-body">
+                            <h5 class="card-title">ออกแบบสวยงาม</h5>
+                            <p class="card-text">
+                                ใช้คลาสมาตรฐานของ Bootstrap ทำให้หน้าเว็บดูเป็นระเบียบและทันสมัย
+                            </p>
+                            <a href="#" class="btn btn-primary">อ่านเพิ่มเติม</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card  feature-card h-100 border-0 shadow-lg">
+                        <div class="card-body">
+                            <h5 class="card-title">รองรับ Responsive</h5>
+                            <p class="card-text">
+                                สามารถแสดงผลได้ดีทั้งบนคอมพิวเตอร์ แท็บเล็ต และโทรศัพท์มือถือ
+                            </p>
+                            <a href="#" class="btn btn-success">ดูตัวอย่าง</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card  feature-card h-100 border-0 shadow-lg">
+                        <div class="card-body">
+                            <h5 class="card-title">พัฒนารวดเร็ว</h5>
+                            <p class="card-text">
+                                ลดเวลาการเขียน CSS เอง เพราะ Bootstrap มี component สำเร็จรูปให้ใช้งาน
+                            </p>
+                            <a href="#" class="btn btn-warning">เริ่มต้น</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-md-4">
-          <div class="card  feature-card h-100 border-0 shadow-lg">
-            <div class="card-body">
-              <h5 class="card-title">รองรับ Responsive</h5>
-              <p class="card-text">
-                สามารถแสดงผลได้ดีทั้งบนคอมพิวเตอร์ แท็บเล็ต และโทรศัพท์มือถือ
-              </p>
-              <a href="#" class="btn btn-success">ดูตัวอย่าง</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card  feature-card h-100 border-0 shadow-lg">
-            <div class="card-body">
-              <h5 class="card-title">พัฒนารวดเร็ว</h5>
-              <p class="card-text">
-                ลดเวลาการเขียน CSS เอง เพราะ Bootstrap มี component สำเร็จรูปให้ใช้งาน
-              </p>
-              <a href="#" class="btn btn-warning">เริ่มต้น</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
 
     <!-- Table Section -->
@@ -399,7 +420,9 @@
         </div>
     </section>
 
-    
+
+    <a class="back-link" href="index.html">← Back to HTML Tutorial</a>
+
 
     <!-- Modern Footer -->
     <footer class="modern-footer pt-5 pb-3 mt-5 text-white ">
